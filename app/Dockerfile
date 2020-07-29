@@ -1,4 +1,8 @@
 From python:3.7.5-slim
+ENV http_proxy http://00053176:1129NIKU@proxy.nekonet.co.jp:8080
+ENV https_proxy http://00053176:1129NIKU@proxy.nekonet.co.jp:8080
+ENV HTTP_PROXY http://00053176:1129NIKU@proxy.nekonet.co.jp:8080
+ENV HTTPS_PROXY http://00053176:1129NIKU@proxy.nekonet.co.jp:8080
 RUN pip install flask==1.1.1 redis==3.3.8
 WORKDIR /src
 COPY ./src/server.py /src/
